@@ -46,5 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    document.cookie = "essential_session=xyz123; path=/";
+    document.cookie = "analytics_ga=GA-TEST-001; path=/";
+    document.cookie = "marketing_fb=FB-TEST-001; path=/";
+    document.cookie = "preferences_theme=dark; path=/";
+
+    console.log(document.cookie);
+});
+</script>
 </body>
 </html>
